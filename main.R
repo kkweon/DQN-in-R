@@ -2,8 +2,8 @@ source("Agent.R")
 source("Memory.R")
 source("train.R")
 
-N_EPISODE = 500
-BATCH_SIZE = 32
+N_EPISODE <- 500
+BATCH_SIZE <- 32
 
 gym <- import("gym")
 env <- gym$make("CartPole-v0")
@@ -20,6 +20,7 @@ agent <-
 memory <- Memory$new(capacity = 50000)
 
 rewards <- c()
+
 with(tf$Session() %as% sess, {
     init <- tf$global_variables_initializer()
     sess$run(init)
@@ -46,6 +47,7 @@ with(tf$Session() %as% sess, {
             s <- s2
             total_reward <- total_reward + r
         }
+        
         cat(
             sprintf(
                 "[Episode: %4d] Reward: %4d, Epsilon: %.3f\n",
