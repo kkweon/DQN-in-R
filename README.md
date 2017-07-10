@@ -11,6 +11,14 @@ Original Paper: [Playing Atari with Deep Reinforcement Learning](https://www.cs.
 <img src="assets/algorithm.png" />
 </div>
 
+## UML
+
+<div align="center">
+<img src="assets/class_uml.png"/>
+<img src="assets/seq_uml.png"/>
+</div>
+
+
 ## Gym stat
 <div align="center">
 <img src="assets/gym.png" />
