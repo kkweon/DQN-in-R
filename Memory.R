@@ -28,7 +28,7 @@ Memory <- R6Class(
                 self$actions <- matrix(self$actions[2:self$length, ])
                 self$rewards <- matrix(self$rewards[2:self$length, ])
                 self$dones <- matrix(self$dones[2:self$length, ])
-                self$states2 <- self$states[2:self$length, ]
+                self$states2 <- self$states2[2:self$length, ]
                 
                 self$length <- self$length - 1L
             }
